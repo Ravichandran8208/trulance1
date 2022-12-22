@@ -1,0 +1,558 @@
+<html>
+<head>
+<title>TestNG:  TC_038</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TC_038</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/5</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Sep 13 07:00:44 PDT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>836 seconds (836457 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers.preCondition()'><b>preCondition</b><br>Test class: com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers</td>
+<td><div><pre>java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:92)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:107)
+	at com.framework.selenium.api.base.SeleniumBase.startApp(SeleniumBase.java:600)
+	at com.framework.testng.api.base.ProjectSpecificMethods.preCondition(ProjectSpecificMethods.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1639541021", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1639541021'><pre>java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:92)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:107)
+	at com.framework.selenium.api.base.SeleniumBase.startApp(SeleniumBase.java:600)
+	at com.framework.testng.api.base.ProjectSpecificMethods.preCondition(ProjectSpecificMethods.java:50)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>92</td>
+<td>com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers@638ef7ed</td></tr>
+<tr>
+<td title='com.medmantra.testcases.Laboratory.ToCreateLRNNumber.preCondition()'><b>preCondition</b><br>Test class: com.medmantra.testcases.Laboratory.ToCreateLRNNumber</td>
+<td><div><pre>java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:92)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:107)
+	at com.framework.selenium.api.base.SeleniumBase.startApp(SeleniumBase.java:600)
+	at com.framework.testng.api.base.ProjectSpecificMethods.preCondition(ProjectSpecificMethods.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace884690467", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace884690467'><pre>java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:92)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:107)
+	at com.framework.selenium.api.base.SeleniumBase.startApp(SeleniumBase.java:600)
+	at com.framework.testng.api.base.ProjectSpecificMethods.preCondition(ProjectSpecificMethods.java:50)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>93</td>
+<td>com.medmantra.testcases.Laboratory.ToCreateLRNNumber@3e62d773</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.medmantra.testcases.Laboratory.ToCreateLRNNumber.preCondition()'><b>preCondition</b><br>Test class: com.medmantra.testcases.Laboratory.ToCreateLRNNumber</td>
+<td></td>
+<td>-1663077737</td>
+<td>com.medmantra.testcases.Laboratory.ToCreateLRNNumber@3e62d773</td></tr>
+<tr>
+<td title='com.medmantra.testcases.Laboratory.ToCreateLRNNumber.postCondition()'><b>postCondition</b><br>Test class: com.medmantra.testcases.Laboratory.ToCreateLRNNumber</td>
+<td></td>
+<td>-1663077737</td>
+<td>com.medmantra.testcases.Laboratory.ToCreateLRNNumber@3e62d773</td></tr>
+<tr>
+<td title='com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers.preCondition()'><b>preCondition</b><br>Test class: com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers</td>
+<td></td>
+<td>-1663078390</td>
+<td>com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers@638ef7ed</td></tr>
+<tr>
+<td title='com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers.postCondition()'><b>postCondition</b><br>Test class: com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers</td>
+<td></td>
+<td>-1663078390</td>
+<td>com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers@638ef7ed</td></tr>
+<tr>
+<td title='com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers.preCondition()'><b>preCondition</b><br>Test class: com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers</td>
+<td></td>
+<td>-1663078300</td>
+<td>com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers@638ef7ed</td></tr>
+<tr>
+<td title='com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers.preCondition()'><b>preCondition</b><br>Test class: com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers</td>
+<td></td>
+<td>-1663078390</td>
+<td>com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers@638ef7ed</td></tr>
+<tr>
+<td title='com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers.postCondition()'><b>postCondition</b><br>Test class: com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers</td>
+<td></td>
+<td>-1663078480</td>
+<td>com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers@638ef7ed</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.medmantra.testcases.Laboratory.TC_029_LAB_IPSampleCollection.IPSampleCollection()'><b>IPSampleCollection</b><br>Test class: com.medmantra.testcases.Laboratory.TC_029_LAB_IPSampleCollection</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:92)
+	at com.framework.selenium.api.base.SeleniumBase.clearAndType(SeleniumBase.java:312)
+	at com.medmantra.pages.IPSampleCollectionPage.enterLRN(IPSampleCollectionPage.java:19)
+	at com.medmantra.testcases.Laboratory.TC_029_LAB_IPSampleCollection.IPSampleCollection(TC_029_LAB_IPSampleCollection.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1558677111", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1558677111'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:92)
+	at com.framework.selenium.api.base.SeleniumBase.clearAndType(SeleniumBase.java:312)
+	at com.medmantra.pages.IPSampleCollectionPage.enterLRN(IPSampleCollectionPage.java:19)
+	at com.medmantra.testcases.Laboratory.TC_029_LAB_IPSampleCollection.IPSampleCollection(TC_029_LAB_IPSampleCollection.java:32)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>177</td>
+<td>com.medmantra.testcases.Laboratory.TC_029_LAB_IPSampleCollection@7283d3eb</td></tr>
+<tr>
+<td title='com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers.runReceiveSamplesPrintStickers()'><b>runReceiveSamplesPrintStickers</b><br>Test class: com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers<br>Parameters: RegSticker.aspx</td>
+<td><div><pre>java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:92)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:107)
+	at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:632)
+	at com.medmantra.pages.LoginPage.enterUsername(LoginPage.java:23)
+	at com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers.runReceiveSamplesPrintStickers(TC_038_LAB_ReceiveSamplePrintStickers.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2113001210", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2113001210'><pre>java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:92)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:107)
+	at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:632)
+	at com.medmantra.pages.LoginPage.enterUsername(LoginPage.java:23)
+	at com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers.runReceiveSamplesPrintStickers(TC_038_LAB_ReceiveSamplePrintStickers.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>90</td>
+<td>com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers@638ef7ed</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.medmantra.testcases.Laboratory.TC_029_LAB_IPSampleCollection.IPSampleCollection()'><b>IPSampleCollection</b><br>Test class: com.medmantra.testcases.Laboratory.TC_029_LAB_IPSampleCollection</td>
+<td><div><pre>java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:92)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:107)
+	at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:632)
+	at com.medmantra.pages.LoginPage.enterUsername(LoginPage.java:23)
+	at com.medmantra.testcases.Laboratory.TC_029_LAB_IPSampleCollection.IPSampleCollection(TC_029_LAB_IPSampleCollection.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace589159263", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace589159263'><pre>java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:92)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:107)
+	at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:632)
+	at com.medmantra.pages.LoginPage.enterUsername(LoginPage.java:23)
+	at com.medmantra.testcases.Laboratory.TC_029_LAB_IPSampleCollection.IPSampleCollection(TC_029_LAB_IPSampleCollection.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>90</td>
+<td>com.medmantra.testcases.Laboratory.TC_029_LAB_IPSampleCollection@7283d3eb</td></tr>
+<tr>
+<td title='com.medmantra.testcases.Laboratory.ToCreateLRNNumber.createLRN()'><b>createLRN</b><br>Test class: com.medmantra.testcases.Laboratory.ToCreateLRNNumber<br>Parameters: Department</td>
+<td><div><pre>java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:92)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:107)
+	at com.framework.selenium.api.base.SeleniumBase.startApp(SeleniumBase.java:600)
+	at com.framework.testng.api.base.ProjectSpecificMethods.preCondition(ProjectSpecificMethods.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1577555746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1577555746'><pre>java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:92)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:107)
+	at com.framework.selenium.api.base.SeleniumBase.startApp(SeleniumBase.java:600)
+	at com.framework.testng.api.base.ProjectSpecificMethods.preCondition(ProjectSpecificMethods.java:50)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.medmantra.testcases.Laboratory.ToCreateLRNNumber@3e62d773</td></tr>
+<tr>
+<td title='com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers.runReceiveSamplesPrintStickers()'><b>runReceiveSamplesPrintStickers</b><br>Test class: com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers<br>Parameters: RegSticker.aspx</td>
+<td><div><pre>java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:92)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:107)
+	at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:632)
+	at com.medmantra.pages.LoginPage.enterUsername(LoginPage.java:23)
+	at com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers.runReceiveSamplesPrintStickers(TC_038_LAB_ReceiveSamplePrintStickers.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1696356666", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1696356666'><pre>java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:92)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:107)
+	at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:632)
+	at com.medmantra.pages.LoginPage.enterUsername(LoginPage.java:23)
+	at com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers.runReceiveSamplesPrintStickers(TC_038_LAB_ReceiveSamplePrintStickers.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>90</td>
+<td>com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers@638ef7ed</td></tr>
+<tr>
+<td title='com.medmantra.testcases.Laboratory.TC_029_LAB_IPSampleCollection.IPSampleCollection()'><b>IPSampleCollection</b><br>Test class: com.medmantra.testcases.Laboratory.TC_029_LAB_IPSampleCollection</td>
+<td><div><pre>java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:92)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:107)
+	at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:632)
+	at com.medmantra.pages.HomePage.mouseHoverOnPatientService(HomePage.java:17)
+	at com.medmantra.testcases.Laboratory.TC_029_LAB_IPSampleCollection.IPSampleCollection(TC_029_LAB_IPSampleCollection.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1609315188", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1609315188'><pre>java.lang.RuntimeException: See the reporter for details.
+	at com.framework.utils.Reporter.reportStep(Reporter.java:92)
+	at com.framework.utils.Reporter.reportStep(Reporter.java:107)
+	at com.framework.selenium.api.base.SeleniumBase.locateElement(SeleniumBase.java:632)
+	at com.medmantra.pages.HomePage.mouseHoverOnPatientService(HomePage.java:17)
+	at com.medmantra.testcases.Laboratory.TC_029_LAB_IPSampleCollection.IPSampleCollection(TC_029_LAB_IPSampleCollection.java:26)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>103</td>
+<td>com.medmantra.testcases.Laboratory.TC_029_LAB_IPSampleCollection@7283d3eb</td></tr>
+<tr>
+<td title='com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers.runReceiveSamplesPrintStickers()'><b>runReceiveSamplesPrintStickers</b><br>Test class: com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers<br>Parameters: RegSticker.aspx</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:92)
+	at com.framework.selenium.api.base.SeleniumBase.type(SeleniumBase.java:342)
+	at com.medmantra.pages.PrepareSampleInternalPage.enterLRNNo(PrepareSampleInternalPage.java:20)
+	at com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers.runReceiveSamplesPrintStickers(TC_038_LAB_ReceiveSamplePrintStickers.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2028769824", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2028769824'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:92)
+	at com.framework.selenium.api.base.SeleniumBase.type(SeleniumBase.java:342)
+	at com.medmantra.pages.PrepareSampleInternalPage.enterLRNNo(PrepareSampleInternalPage.java:20)
+	at com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers.runReceiveSamplesPrintStickers(TC_038_LAB_ReceiveSamplePrintStickers.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>26</td>
+<td>com.medmantra.testcases.Laboratory.TC_038_LAB_ReceiveSamplePrintStickers@638ef7ed</td></tr>
+</table><p>
+</body>
+</html>

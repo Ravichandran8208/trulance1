@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+		<listener class-name="com.framework.utils.RetryListener"></listener>
+	</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.trulances.testcases2.TC_14029_VerifyWhyTrulanceBodyCopy"/>
+      <class name="com.trulances.testcases2.TC_14033_VerifyBelowContentHeading3Identity"/>
+      <class name="com.trulances.testcases2.TC_14037_VerifyMoreLetterInSubHeading"/>
+      <class name="com.trulances.testcases2.TC_14038_VerifyHowitsWorksSubMenu"/>
+      <class name="com.trulances.testcases2.TC_14044_VerifyDoctorDiscussionMenuContent"/>
+      <class name="com.trulances.testcases2.TC_14032_VerifyBodyCopyAboveBRISTOLSTOOLFORMSCALE"/>
+      <class name="com.trulances.testcases2.TC_14028_VerifyHowItsWorksHeader2BodyCopy"/>
+      <class name="com.trulances.testcases2.TC_14027_VerifyAboutTrulanceBodyCopy"/>
+      <class name="com.trulances.testcases2.TC_14039_VerifyUroguanylinworksText"/>
+      <class name="com.trulances.testcases2.TC_14026_VerifyBelowIBSCImgInfo"/>
+      <class name="com.trulances.testcases2.TC_14024_VerifyIBSCandCICButtonLocation"/>
+      <class name="com.trulances.testcases2.TC_14045_VerifyStomachPainText"/>
+      <class name="com.trulances.testcases2.TC_14034_VerifyCTAReduceButtonInTrulance"/>
+      <class name="com.trulances.testcases2.TC_14035_VerifySubHeadOfTrulanceIBSC"/>
+      <class name="com.trulances.testcases2.TC_14023_VerifyBodyCopyTextHeading2"/>
+      <class name="com.trulances.testcases2.TC_14043_VerifyPatientStoriesPageBody"/>
+      <class name="com.trulances.testcases2.TC_14030_VerifyTakingTrulanceBodyCopy"/>
+      <class name="com.trulances.testcases2.TC_14031_VerifyTrulanceForCICBodyCopy"/>
+      <class name="com.trulances.testcases2.TC_14046_VerifyLessStomachPain"/>
+      <class name="com.trulances.testcases2.TC_14042_VerifyCommonSideEffectPageBodyText"/>
+      <class name="com.trulances.testcases2.TC_14036_VerifyTrulanceHelpedPeopleTrulanceIBSC"/>
+      <class name="com.trulances.testcases2.TC_14040_VerifyUroguanylinLi5Text"/>
+      <class name="com.trulances.testcases2.TC_14041_VerifyTakingTrulancePageListCont"/>
+      <class name="com.trulances.testcases2.TC_14025_VerifyBodyCopyTextPropInIBSCBelow"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
